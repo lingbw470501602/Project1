@@ -17,9 +17,9 @@
 	</bean>
 	<mvc:annotation-driven></mvc:annotation-driven>
 	<mvc:resources location="/js/" mapping="/js/**"></mvc:resources>
-<mvc:resources location="/test/" mapping="/test/**"></mvc:resources>
+	<mvc:resources location="/test/" mapping="/test/**"></mvc:resources>
 	<mvc:resources location="/file/" mapping="/file/**"></mvc:resources>
-<mvc:resources location="/image/" mapping="/image/**"></mvc:resources>
+	<mvc:resources location="/image/" mapping="/image/**"></mvc:resources>
 	<bean class="org.mybatis.spring.SqlSessionFactoryBean" id="sqlSessionFactory">
 
 		<property name="dataSource" ref="dataSource" />
