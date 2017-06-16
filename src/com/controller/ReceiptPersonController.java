@@ -28,9 +28,9 @@ public class ReceiptPersonController {
 	
 
 	@RequestMapping(value = "ap")
-	private String addPerson(ReceiptPerson rp) {
+	private String addPerson(ReceiptPerson rp,Integer userid) {
 		System.out.println(rp);
-		rp.setUserid(2);
+		rp.setUserid(userid);
 		irps.addReceiptPerson(rp);
 		
 		
